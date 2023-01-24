@@ -1,5 +1,13 @@
 /* reset */
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+  margin: 0;
+}
 ul {
   margin: 0;
   padding: 0;
@@ -37,7 +45,6 @@ header {
 
 header .container{
   display: flex;
-justify-content: center;
 align-items: center;
 gap: 40px;
 }
@@ -47,6 +54,7 @@ gap: 40px;
   display: flex;
   color: #ffffff;
   position: relative;
+  gap: 40px;
 }
 
 /* block html */
@@ -75,10 +83,8 @@ gap: 40px;
 
 
 }
-.nav-menu{
-  gap: 40px;
 
-}
+
 .fotos{
   display: flex;
   justify-content: center;
@@ -216,7 +222,7 @@ header{
   background-color: #8D86C9;
   height: 151px;
   width: 315px ;
-  padding: 35px 120px 40px 35px;
+  padding: 35px 0 40px 35px;
   font-weight: 700;
 font-size: 24px;
 border: none;
@@ -340,17 +346,19 @@ margin: 0;
 .cafename{
   color: white;
   position: absolute;
-  bottom: 30px;
-  left: 40px;
+  bottom: 60px;
+  left: 65px;
 
 }
 .allcafe{
   position: relative;
-  background: url(../images/cafe.jpg);
-  width: 586px;
-  height: 270px;
-  background-repeat: no-repeat;
-  border: 1px solid #F7ECE1;
+    width: 636px;
+    height: 330px;
+    background: url(../images/cafe.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #F7ECE1;
+    background-size: 586px 270px;
   
  
 }
@@ -362,6 +370,7 @@ margin: 0;
   position: absolute;
   top: 3px;
   right: 0px;
+  cursor: pointer;
 }
 .cafebtnsec{
   background-color: #8D86C9;
@@ -371,6 +380,8 @@ margin: 0;
   position: absolute;
   top: 3px;
   right: 60px;
+  cursor: pointer;
+  
   
 }
 .cafetxt{
@@ -380,4 +391,65 @@ margin: 0;
 .cafen{
   width: 636px;
   height: 455px;
+}
+.squadteam{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.teamcard{
+  text-align: center;
+  width: 196px;
+}
+.teamnamed{
+  border: 1px solid #F7ECE1;
+  padding: 0 15px;
+  width: 166px;
+  height: 240px;
+  margin-bottom: 25px;
+}
+.squadnames{
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 1.4;
+  margin-bottom: 15PX;
+}
+.game{
+  background-color:#F7ECE1 ;
+  width: 636px;
+  height: 654px;
+  position: relative;
+  text-align: center;
+}
+.gamestxt{
+  margin-bottom: 25px;
+}
+.games{
+  margin-bottom: 35px;
+  width: 430px;
+height: 134px;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.4;
+margin-left: auto;
+}
+
+.sporttxt{
+  margin-bottom:25px; 
+}
+.texts{
+font-weight: 400;
+font-size: 14px;
+line-height: 1.4;
+margin-bottom: 20px;
+
+}
+.mod{
+  list-style: square;
+}
+
+.texts::marker{
+  color: #8D86C9;
+  font-size: 1.5em;
+
 }
