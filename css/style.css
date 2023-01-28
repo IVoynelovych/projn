@@ -97,7 +97,7 @@ gap: 40px;
   border:1px solid#F7ECE1 ;
 }
 .pic{
-  padding: 150px 0;
+  margin: 150px 0;
 }
 .btn{
   color: #ffffff;
@@ -131,7 +131,8 @@ gap: 40px;
   justify-content: center;
   gap: 160px;
   background-color: #ffffff;
-  padding-top: 150px;
+  margin-top: 150px;
+  margin-bottom: 151px;
 }
 .nn{
 
@@ -182,7 +183,6 @@ footer{
   font-family: 'Gilroy';
   text-align: center;
 
-/* text */
 
 color: #333333
 }
@@ -192,6 +192,20 @@ color: #333333
 }
 .squad{
   background-color: #ffffff;
+  position: relative;
+  width: 1296px;
+height: 523px;
+margin-left: auto;
+margin-right: auto;
+}
+.cap{
+  width: 330px;
+height: 50px;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.4;
+margin-bottom: 75px;
+position: absolute;
 }
 .team{
   display: block;
@@ -226,6 +240,7 @@ header{
   font-weight: 700;
 font-size: 24px;
 border: none;
+text-align: left;
 
 }
 
@@ -386,7 +401,7 @@ margin: 0;
 }
 .cafetxt{
   position: relative;
-  padding-bottom: 75px;
+  margin-bottom: 75px;
 }
 .cafen{
   width: 636px;
@@ -396,6 +411,8 @@ margin: 0;
   display: flex;
   justify-content: center;
   gap: 30px;
+  position: absolute;
+  bottom: 0;
 }
 .teamcard{
   text-align: center;
@@ -418,8 +435,12 @@ margin: 0;
   background-color:#F7ECE1 ;
   width: 636px;
   height: 654px;
-  position: relative;
-  text-align: center;
+  position:absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 440px;
+  margin-left: auto;
 }
 .gamestxt{
   margin-bottom: 25px;
@@ -432,6 +453,7 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.4;
 margin-left: auto;
+text-align: left;
 }
 
 .sporttxt{
@@ -442,14 +464,39 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.4;
 margin-bottom: 20px;
-
+position: relative;
+width: 400px;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.4;
+margin-left: auto;
+text-align: left;
 }
-.mod{
-  list-style: square;
+.mrker{
+  background-color: #8D86C9;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 5px;
+  left: -23px;
 }
-
-.texts::marker{
-  color: #8D86C9;
-  font-size: 1.5em;
-
+.spot{
+  width: 1074px;
+  height: 654px;
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 150px;
+}
+.gamepic{
+  position: absolute;
+  top: 70px;
+  bottom: 70px;
+  right: 550px;
+  z-index: 1;
+}
+.sportlst{
+  padding-top: 70px;
+  padding-right: 60px;
 }
