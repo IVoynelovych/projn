@@ -1,4 +1,8 @@
 /* reset */
+
+:root{ 
+  --acsent:#8D86C9; 
+} 
 h1,
 h2,
 h3,
@@ -41,6 +45,7 @@ header {
 .container {
  max-width: 1296px;
   margin: 0 auto;
+  position: relative;
 }
 
 header .container{
@@ -91,10 +96,44 @@ gap: 40px;
   align-items: center;
   gap:20px;
 }
-.fot{
+.fotone{
+  background: url(../images/tennisfirst.jpg);
+  width: 376px;
+  height: 450px;
   padding: 20px;
-
   border:1px solid#F7ECE1 ;
+  background-repeat:no-repeat ;
+  background-position: center;
+  position: relative;
+}
+.fotsec{
+  background: url(../images/tennissecond.jpg);
+  width: 376px;
+  height: 450px;
+  padding: 20px;
+  border:1px solid#F7ECE1 ;
+  background-repeat:no-repeat ;
+  background-position: center;
+  position: relative;
+}
+.fotthird{
+  background: url(../images/tennisthird.jpg);
+  width: 376px;
+  height: 450px;
+  padding: 20px;
+  border:1px solid#F7ECE1 ;
+  background-repeat:no-repeat ;
+  background-position: center;
+  position: relative;
+}
+.fototxt{
+  color: #ffffff;
+  position:absolute ;
+  bottom: 40px;
+  width: 376px;
+  height: 76px;
+  text-align: center;
+  line-height: 1.4
 }
 .pic{
   margin: 150px 0;
@@ -106,13 +145,24 @@ gap: 40px;
   width: 100%;
   padding: 15px 31px;
   border: none;
+  text-align: left;
 
 }
 .pric{
   width: 526px;
+  position: relative;
 }
 .pri{
   margin: 75px 0;
+}
+.hsign{
+  display: block;
+  width: 18px;
+  height: 20px;
+  fill: #ffffff;
+  position: absolute;
+  top: 17px;
+  right: 21px;
 }
 
 .try{
@@ -162,6 +212,7 @@ footer{
   justify-content: center;
   align-items: center;
   gap:20px;
+  position: relative;
 }
 .pictu{
   display: flex;
@@ -207,6 +258,20 @@ line-height: 1.4;
 margin-bottom: 75px;
 position: absolute;
 }
+.sgnleft{
+  display: block;
+  width: 17px;
+  height: 15px;
+  fill: #ffffff;
+  margin: 15px 14px 15px 9px;
+}
+.sgnright{
+  display: block;
+  width: 17px;
+  height: 15px;
+  fill: #ffffff;
+  margin: 15px 14px 15px 9px;
+}
 .team{
   display: block;
   text-align: center;
@@ -241,13 +306,25 @@ header{
 font-size: 24px;
 border: none;
 text-align: left;
+position: relative;
+
+}
+.svglink{
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  fill: #ffffff;
+  bottom: 54px;
+  left: 255px;
+  z-index: 2;
 
 }
 
 .highlst{
   display: flex;
   gap: 12px;
-  padding-top: 342px;
+  margin-top: 323px;
 
   
   
@@ -266,6 +343,7 @@ font-size: 18px;
   font-size: 48px;
 line-height: 140%;
 width: 636px;
+
 
 
 }
@@ -386,6 +464,7 @@ margin: 0;
   top: 3px;
   right: 0px;
   cursor: pointer;
+
 }
 .cafebtnsec{
   background-color: #8D86C9;
@@ -472,11 +551,14 @@ line-height: 1.4;
 margin-left: auto;
 text-align: left;
 }
-.mrker{
-  background-color: #8D86C9;
-  width: 8px;
-  height: 8px;
+.texts::before{
   position: absolute;
+  content: "";
+  display: block;
+  height: 8px;
+  width: 8px;
+  background-color: #8D86C9;
+  margin-right: 10px;
   top: 5px;
   left: -23px;
 }
@@ -499,4 +581,94 @@ text-align: left;
 .sportlst{
   padding-top: 70px;
   padding-right: 60px;
+}
+.newshead{
+  display: flex;
+}
+.svgyt{
+  display: block;
+  width: 36px;
+  height: 36px;
+  margin-left: 90px;
+  fill: white;
+
+}
+.svgvk{
+  display: block;
+  width: 36px;
+  height: 36px;
+  fill: white
+
+}
+.svgytend{
+  display: block;
+  width: 36px;
+  height: 36px;
+  fill: #8D86C9;
+  margin-left: 110px;
+  margin-top: 20px;
+}
+.svgvkend{
+  display: block;
+  width: 36px;
+  height: 36px;
+  fill: #8D86C9;
+  margin-top: 20px;
+}
+.svgtgend{
+  display: block;
+  width: 36px;
+  height: 36px;
+  fill: #8D86C9;
+  margin-top: 20px;
+}
+
+
+  .svgtrigle{ 
+    width: 16px; 
+    height: 20px; 
+    position: absolute; 
+    top: 22px; 
+    left: 24px; 
+    right: 24px; 
+    bottom: 22px; 
+    fill: white;
+} 
+.svgvideo::before{ 
+    position: absolute; 
+    content: ''; 
+    left: -8px; 
+    right: -8px; 
+    top: -8px; 
+    bottom: -8px; 
+    border-radius: 50%; 
+    background-color: transparent; 
+    border: 1px solid white; 
+} 
+.svg-div{ 
+    position: relative; 
+    display: block; 
+    margin: 40px; 
+} 
+.svgvideo{ 
+    padding: 0; 
+    position: relative; 
+    background-color: var(--acsent); 
+    width: 64px; 
+    height: 64px; 
+    border-radius: 50%; 
+    border: transparent; 
+}
+.svgpart{
+  display: flex;
+  gap: 30px;
+  margin-top: 60px;
+}
+.svgtxt{
+  color: #ffffff;
+  width: 158px;
+height: 50px;
+font-weight: 600;
+font-size: 18px;
+line-height: 1.4;
 }
